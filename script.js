@@ -8,6 +8,14 @@ let BMI2 = Math.round(BMI * 10) / 10;
 let bmi = document.getElementById("bmi");
 bmi.innerText = `Je BMI is ${BMI2}.`;
 
+if (BMI < 18.5) {
+    bmi.innerText += 'Je hebt ondergewicht'
+} else if (BMI >= 18.5 && BMI < 25) {
+    bmi.innerText += 'Je hebt een gezond gewicht'
+} else {
+    bmi.innerText += 'Je hebt overgewicht'
+}
+
 }
 
 
