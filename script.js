@@ -17,6 +17,18 @@ if (BMI < 18.5) {
 
 }
 
+function calculateCM() {
+    let foot = document.getElementById("feet").value;
+let inches = document.getElementById("inches").value;
+let result = (foot * 30.48) + (inches * 2.54)
+let cm = document.getElementById("cm");
+console.log(result)
+
+    cm.innerHTML += `<p>${result} cm</p>`
+
+}
+
+
 
 
 
