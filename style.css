@@ -29,3 +29,7 @@ input {
 #bmi {
     text-align: center;
 }
+
+input[type="range"] {
+    width: 300px;
+}
