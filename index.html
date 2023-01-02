@@ -9,47 +9,19 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="container">
-       <div>
-    <input type="numbers" id="weight">kilo</input><br>
-<input type="numbers" id="height">centimeter</input><br>
-</div>
+    <!-- <div id="container"> -->
+<div class="info">
+<input type="range" max="260" value="0" id="weight" oninput="this.nextElementSibling.value = this.value">
+<input type="number">cm</input>
+
+<input type="range" max="600" value="0" id="height" oninput="this.nextElementSibling.value = this.value">
+<input type="number">kg</input>
 <button onclick="calculateBMI()">Bereken BMI</button>
-<div id="bmi"></div>
 </div>
+<div class="green"></div>
 
-<input type="range" max="260" value="0" oninput="this.nextElementSibling.value = this.value">
-<input type="number">0</input>cm
-<input type="range" max="600" value="0" oninput="this.nextElementSibling.value = this.value">
-<output>0</output>kg
+<div class="white" id="bmi"></div>
 
-
-<div id="container">
-    <div>
- <input type="numbers" id="feet">feet</input><br>
-<input type="numbers" id="inches">inches</input><br>
-</div>
-<button onclick="calculateCM()">Bereken cm</button>
-<div id="cm"></div>
-</div>
-
-<div id="container">
-    <div>
- <input type="numbers" id="feet">feet</input><br>
-<input type="numbers" id="inches">inches</input><br>
-</div>
-<button onclick="calculateCM()">Bereken cm</button>
-<div id="cm"></div>
-</div>
-
-<div id="container">
-    <div>
- <input type="numbers" id="feet">feet</input><br>
-<input type="numbers" id="inches">inches</input><br>
-</div>
-<button onclick="calculateCM()">Bereken cm</button>
-<div id="cm"></div>
-</div>
-
+<!-- </div> -->
 </body>
 </html>
