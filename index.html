@@ -9,19 +9,24 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- <div id="container"> -->
 <div class="info">
-<input type="range" max="260" value="0" id="weight" oninput="this.nextElementSibling.value = this.value">
-<input type="number">cm</input>
+    <p>Lengte</p>
+    <input type="number" value="this.nextElementSibling.value = this.value">cm</input>
+<input type="range" max="260" value="0" id="weight" oninput="this.previousElementSibling.value = this.value">
 
-<input type="range" max="600" value="0" id="height" oninput="this.nextElementSibling.value = this.value">
+<p>Gewicht</p>
 <input type="number">kg</input>
+<input type="range" max="600" value="0" id="height" oninput="this.previousElementSibling.value = this.value">
+
 <button onclick="calculateBMI()">Bereken BMI</button>
 </div>
 <div class="green"></div>
 
-<div class="white" id="bmi"></div>
-
-<!-- </div> -->
+<div class="white">
+<p>Je BMI Score</p>
+<p id="bmi">Score</p>
+<p id="description">Toelichting</p>
+</div>
+<img src="sporterbmi.png">
 </body>
 </html>

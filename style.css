@@ -6,18 +6,9 @@ body {
     grid-template-areas: 
 "a a b"
 "a a b"
+"c c b"
 "c c b";
 height: 100vh;
-}
-
-#container {
-    width: 100vw;
-    height: 100vh;
-    /* background-color: #1D1E24; */
-    display: grid;
-align-items: center;
-box-sizing: border-box;
-
 }
 
 .info {
@@ -26,12 +17,15 @@ box-sizing: border-box;
     grid-area: a;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .green {
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: #04EC37;
     grid-area: b;
 }
 
@@ -46,7 +40,7 @@ button {
 }
 
 input {
-    width: 30px;
+    
     text-align: center;
 }
 
@@ -55,10 +49,21 @@ input {
 }
 
 input[type="range"] {
-    width: 300px;
+    width: 80%;
+    overflow: hidden;
+    background-color: #04EC37;
+    accent-color: #04EC37;
 }
 
 input[type="number"] {
     border-radius: 10px;
     border-color: aqua;
+    width: 40px;
+}
+
+img {
+    position: absolute;
+    width: 600px;
+    right: 5%;
+    top: -20%;
 }
