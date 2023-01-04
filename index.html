@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
-<div class="info">
-    <p>Lengte</p>
-    <input type="number" value="this.nextElementSibling.value = this.value">cm</input>
-<input type="range" max="260" value="0" id="weight" oninput="this.previousElementSibling.value = this.value">
+  </head>
+  <body>
+    <div class="info">
+      <div class="test">
+        <span class="length-text">Lengte</span>
+        <span>in cm</span>
+        <input type="number" />
 
-<p>Gewicht</p>
-<input type="number">kg</input>
-<input type="range" max="600" value="0" id="height" oninput="this.previousElementSibling.value = this.value">
+        <input
+          type="range"
+          min="100"
+          max="260"
+          value="0"
+          id="height"
+          oninput="this.previousElementSibling.value = this.value"
+        />
 
-<button onclick="calculateBMI()">Bereken BMI</button>
-</div>
-<div class="green"></div>
+        <span class="weight-text">Gewicht</span>
+        <span>in kg</span>
+        <input type="number" />
+        <input
+          type="range"
+          max="300"
+          value="0"
+          id="weight"
+          oninput="this.previousElementSibling.value = this.value"
+        />
 
-<div class="white">
-<p>Je BMI Score</p>
-<p id="bmi">Score</p>
-<p id="description">Toelichting</p>
-</div>
-<img src="sporterbmi.png">
-</body>
+        <button onclick="calculateBMI()">Bereken BMI</button>
+      </div>
+    </div>
+    <div class="green"></div>
+
+    <div class="white">
+      <div class="score">
+        <p class="bmi-score">Je BMI Score</p>
+        <p id="bmi">25.1</p>
+      </div>
+      <p id="description">
+        Toelichting Hier komt de toelichting. Een gezond BMI ligt tussen de 18.5
+        en 25.
+      </p>
+    </div>
+    <!-- <img src="sporterbmi.png"> -->
+  </body>
 </html>
