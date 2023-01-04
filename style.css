@@ -8,11 +8,12 @@ body {
     margin: 0;
     display: grid;
     grid-template-areas: 
-"a a b"
-"a a b"
-"c c b"
-"c c b";
+"a a b b"
+"a a b b"
+"c c b b"
+"c c b b";
 height: 100vh;
+width: 100vw;
 overflow: hidden;
 font-family: 'Kumbh Sans', sans-serif;
 }
@@ -37,6 +38,8 @@ font-family: 'Kumbh Sans', sans-serif;
     height: 100%;
     background-color: #04EC37;
     grid-area: b;
+    background: #04EC37 url(download.png) top center no-repeat;
+    background-size: 500px;
 }
 
 .white {
@@ -133,7 +136,7 @@ input[type=number] {
 
 img {
     position: absolute;
-    width: 600px;
+    width: 400px;
     right: 0%;
     top: -20%;
 }
