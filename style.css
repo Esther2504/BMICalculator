@@ -1,126 +1,67 @@
 @font-face {
-    font-family: 'Kumbh Sans', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
-  }
+  font-family: "Kumbh Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap");
+}
 
 body {
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-areas: 
-"a a b b"
-"a a b b"
-"c c b b"
-"c c b b";
-height: 100vh;
-width: 100vw;
-overflow: hidden;
-font-family: 'Kumbh Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "a a b b"
+    "a a b b"
+    "c c b b"
+    "c c b b";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-.info {
-    background-color: #1D1E24;
-    width: 100%;
-    grid-area: a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.calculator {
+  background-color: #1d1e24;
+  width: 100%;
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.test {
-    width: 80%;
+.input-container {
+  width: 80%;
 }
 
-.green {
-    width: 100%;
-    height: 100%;
-    background-color: #04EC37;
-    grid-area: b;
-    background: #04EC37 url(download.png) top center no-repeat;
-    background-size: 500px;
-}
-
-.white {
-    background-color: white;
-    grid-area: c;
-    display: flex;
-    margin: 0 auto;
-    width: 90%;
-    justify-content: space-evenly;
-    opacity: 0;
-}
-
-.score {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.score p {
-        margin: 0;
-}
-
-button {
-    width: 250px;
-    height: 70px;
-    margin-top: 5%;
-    background-color: #04EC37;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-input {
-    
-    text-align: center;
-}
-
-#bmi {
-    /* text-align: center; */
-    font-size: 6.6rem;
-}
-
-.length-text  {
-    font-size: 1.6rem;
-    margin-top: 50px;
+.height-text {
+  font-size: 1.6rem;
+  margin-top: 50px;
 }
 
 .weight-text {
-    font-size: 1.6rem;
-    margin-top: 50px;
-}
-
-#description {
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    width: 250px;
-    text-align: center;
+  font-size: 1.6rem;
+  margin-top: 50px;
 }
 
 input[type="range"] {
-    width: 100%;
-    overflow: hidden;
-    background-color: #04EC37;
-    accent-color: #04EC37;
-    margin-bottom: 50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #04ec37;
+  accent-color: #04ec37;
+  margin-bottom: 50px;
 }
 
 input[type="number"] {
-    border-radius: 10px;
-    width: 50px;
-    margin-right: 0;
-    appearance: none;
-    color: white;
-    background-color: #1D1E24;
-    text-align: center;
-    float: right;
-    border-color: #04EC37;
-    font-size: 1.5rem;
-    /* display: flex;
-    align-self: flex-end; */
+  border-radius: 10px;
+  width: 50px;
+  margin-right: 0;
+  appearance: none;
+  color: white;
+  background-color: #1d1e24;
+  text-align: center;
+  float: right;
+  border-color: #04ec37;
+  font-size: 1.5rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -129,18 +70,61 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-img {
-    position: absolute;
-    width: 400px;
-    right: 0%;
-    top: -20%;
+button {
+  width: 250px;
+  height: 70px;
+  margin-top: 5%;
+  background-color: #04ec37;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background-color: #04ec37;
+  grid-area: b;
+  background: #04ec37 url(sporter.png) top center no-repeat;
+  background-size: 500px;
+}
+
+.score-container {
+  background-color: white;
+  grid-area: c;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: space-evenly;
+  opacity: 0;
+}
+
+.score {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score p {
+  margin: 0;
 }
 
 .bmi-score {
-    font-size: 2.3rem;
+  font-size: 2.3rem;
+}
+
+.bmi {
+  font-size: 6.6rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  text-align: center;
 }
